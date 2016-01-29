@@ -197,10 +197,6 @@ static SIAlertView *__si_alert_current_view;
 
 - (BOOL)shouldAutorotate
 {
-    UIViewController *viewController = [self.alertView.oldKeyWindow currentViewController];
-    if (viewController) {
-        return [viewController shouldAutorotate];
-    }
     return YES;
 }
 
